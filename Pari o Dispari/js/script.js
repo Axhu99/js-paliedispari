@@ -19,6 +19,11 @@ if(isNaN(choiceNumber)){
 const randomNumberCPU = Math.floor(Math.random()*5)+1;
 console.log(randomNumberCPU)
 
+function getRandomNumber(min, max){
+    const randomNumber = Math.floor(Math.random()*(max + 1 - min)) + min;
+    return randomNumber;
+}
+
 // sommo i due numeri 
 const sum = choiceNumber + randomNumberCPU;
 console.log(sum)
